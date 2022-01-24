@@ -1,0 +1,238 @@
+body,
+html,
+#root {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  background: #e5eaf0;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.title {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #999;
+  text-align: center;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.justifySpaceBetween {
+  justify-content: space-between;
+}
+
+.heading {
+  margin: auto;
+
+  padding: 1em;
+}
+
+.heading .title {
+  padding: 0.5em;
+  font-weight: 600;
+}
+
+.heading .subtitle {
+  padding: 0em 1em;
+  text-align: center;
+}
+
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.form {
+  margin: auto;
+  width: 75%;
+  padding: 1em;
+  min-height: 300px;
+}
+
+@media screen and (max-width: 727px) {
+  .form {
+    width: 80%;
+  }
+}
+
+.form .label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.2rem 0rem;
+  margin-bottom: 0.2rem;
+  color: #57606e;
+  margin-top: 1rem;
+}
+
+.form .label span {
+  color: #bbb;
+}
+
+.form input {
+  padding: 0.8rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: auto;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  outline-color: #664de5;
+}
+
+.form .prepend ~ input {
+  border-radius: 0px 6px 6px 0px;
+}
+
+.form .prepend {
+  padding: 0.8rem;
+  border-radius: 6px 0px 0px 6px;
+  box-sizing: border-box;
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-right-color: #fafafa;
+  margin: 0px;
+  color: #57606e;
+  line-height: 0.95;
+}
+
+.form button {
+  padding: 1rem 0.8rem;
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  background: #664de5;
+  box-sizing: border-box;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.form button:hover {
+  opacity: 0.9;
+}
+
+.form button:active {
+  opacity: 0.8;
+}
+
+.form .radioItem {
+  padding: 1rem 2rem;
+  padding-bottom: 1.5rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0.5rem 1rem;
+  flex: 1;
+  border-radius: 8px;
+}
+
+.form .radioItem img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.form .radioItem .radioTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #57606e;
+  margin-bottom: 1rem;
+}
+
+.form .radioItem .radioSubTitle {
+  color: #999;
+}
+
+.stepProgress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70%;
+  padding: 3em 0em;
+  margin: auto;
+}
+
+.step {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.stepNumber {
+  padding: 0.5rem;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border-radius: 60px;
+  cursor: pointer;
+  color: #333;
+  margin: 0px;
+  box-shadow: 0px 0px 0px 1px #eee;
+  background: white;
+  font-size: 0.75rem;
+}
+
+.doneStep .stepNumber {
+  background: #664de5;
+  color: white;
+  box-shadow: 0px 0px 0px 1px #664de5;
+}
+
+.line {
+  height: 1px;
+  background: #eee;
+  left: 100%;
+  width: 100%;
+}
+
+.step .line:first-child {
+  left: -100%;
+}
+.doneLine {
+  background: #664de5;
+}
+
+.onboardWrap {
+  max-width: 600px;
+  width: 100%;
+  min-height: 100%;
+}
+
+.completedOnboard {
+  margin: auto;
+}
+
+.completedOnboard img {
+  height: 10vw;
+}
